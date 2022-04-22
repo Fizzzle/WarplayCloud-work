@@ -1,0 +1,30 @@
+@import './libs/_bootstrap-reboot.min.scss';
+@import './base/mixin.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #141C24;
+}
+
+.container{
+    width: 1120px;
+    margin: 0 auto; 
+}
+
+@import './block/title.scss';
+@import './block/menu.scss';
+@import './block/promo.scss';
+@import './block/start.scss';
+@import './block/rate.scss';
+@import './block/browser.scss';
+@import './block/map.scss';
+@import './block/footer.scss';
+@import './block/media.scss';

@@ -1,0 +1,50 @@
+.browser{
+    padding-top: 90px;
+    height: 1000px;
+    background: url('../img/secondbg.png') no-repeat right 100% / 50% 70%;
+    &__divider{
+        display: block;
+        margin: 0 auto;
+        height: 1px;
+        width: 582px;
+        background-color: #00C5FF;
+        margin-bottom: 245px;
+    }
+    &__wrapper{
+        width: 480px;
+    }
+
+    &__subtitle{
+        padding-left: 84px;
+        position: relative;
+        @include afterLine;
+        margin-bottom: 25px;
+    }
+    &__title{
+        margin-bottom: 90px;
+    }
+    &__descr{        
+        font-weight: 300;
+        font-size: 21.33px;
+        line-height: 32px;
+        color: #ababab;
+        margin-bottom: 60px;
+    }
+    &__link{
+        position: relative;
+        color: #00c5ff;
+        &:hover{
+            color: #00c5ff;
+            text-decoration:none;
+        }
+        &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: -10px;
+                left: 0;
+                background-color: #00c5ff;
+            }
+    }
+}

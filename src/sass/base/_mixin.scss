@@ -1,0 +1,12 @@
+@mixin afterLine {
+    &::after{
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 1px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #57d6ff;            
+        }
+}

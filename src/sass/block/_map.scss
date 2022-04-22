@@ -1,0 +1,16 @@
+.map{
+    padding: 22px 0 86px 0;
+    text-align: center;
+    &__subtitle{
+        padding-left: 84px;
+        position: relative;
+        @include afterLine;
+        &:after{
+            width: 50px;
+            left: 430px;
+        }
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+}
