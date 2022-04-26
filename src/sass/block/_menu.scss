@@ -36,17 +36,21 @@ nav{
         font-size: 16px;
         font-weight: 500;
         line-height: 29px;
-        &:hover{
-            color:#fff;
-            text-decoration: none;
-            &::after{
+        &::after{
                 content: '';
                 position: absolute;
-                width: 100%;
+                width: 0%;
                 height: 1px;
                 bottom: -10px;
                 left: 0;
                 background-color: #00c5ff;
+                transition: all .3s;
+            }
+        &:hover{
+            color:#fff;
+            text-decoration: none;
+            &::after{                
+                width: 100%;
             }
         }
     }
